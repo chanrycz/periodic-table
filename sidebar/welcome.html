@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Periodic table</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="style.css?v=15OCT2020-REV1" rel="stylesheet" />
+</head>
+
+<body>
+<div class="popup-overlay active">
+ <div class="popup-content active">
+    <h2>Welcome to V2!</h2>
+    <p>This is an upgraded version of the V1 Periodic Table.</p>
+    <p>In this version, there are more details and a summary for each element in the periodic table. The UI and UX has been refined and improved significantly. Enjoy!</p>
+    <button class="close">Close</button>
+ </div>
+</div>
+	<main class="blur">
+		<section class="filter-container">
+			<section class="preview">
+				<section class="left-info">
+					<span class="number">1</span>
+					<span class="symbol" style="color: rgb(225, 40, 10);">H</span>
+					<span class="name">Hydrogen</span>
+					<span class="mass">1.00794(4)</span>
+				</section>
+				<section class="right-info">
+					<span>1</span>
+				</section>
+			</section>
+			<section>
+				<section class="label">Nonmetal</section>
+				<section class="label">Noble Gas</section>
+				<section class="label">Alkali Metal</section>
+				<section class="label">Alkaline Earth Metal</section>
+				<section class="label">Metalloid</section>
+			</section>
+			<section>
+				<section class="label">Halogen</section>
+				<section class="label">Transition Metal</section>
+				<section class="label">Post-Transition Metal</section>
+				<section class="label">Lanthanoid</section>
+				<section class="label">Actinoid</section>
+				<section class="label">Unknown</section>
+			</section>
+        </section>
+        <section class="sp-label lanthanoid-sp" style="grid-area: 6 / 3 / auto / auto;"><p >57 &mdash; 71</p></section>
+        <section class="sp-label actinoid-sp" style="grid-area: 7 / 3 / auto / auto;"><p >89 &mdash; 103</p></section>
+        
+        <section class="gp-label" style="grid-area: 8 / 1 / auto / auto;"><span >1</span></section>
+        <section class="gp-label" style="grid-area: 8 / 2 / auto / auto;"><span >2</span></section>
+        <section class="gp-label" style="grid-area: 8 / 3 / auto / auto;"><span >3</span></section>
+        <section class="gp-label" style="grid-area: 8 / 4 / auto / auto;"><span >4</span></section>
+        <section class="gp-label" style="grid-area: 8 / 5 / auto / auto;"><span >5</span></section>
+        <section class="gp-label" style="grid-area: 8 / 6 / auto / auto;"><span >6</span></section>
+        <section class="gp-label" style="grid-area: 8 / 7 / auto / auto;"><span >7</span></section>
+        <section class="gp-label" style="grid-area: 8 / 8 / auto / auto;"><span >8</span></section>
+        <section class="gp-label" style="grid-area: 8 / 9 / auto / auto;"><span >9</span></section>
+        <section class="gp-label" style="grid-area: 8 / 10 / auto / auto;"><span >10</span></section>
+        <section class="gp-label" style="grid-area: 8 / 11 / auto / auto;"><span >11</span></section>
+        <section class="gp-label" style="grid-area: 8 / 12 / auto / auto;"><span >12</span></section>
+        <section class="gp-label" style="grid-area: 8 / 13 / auto / auto;"><span >13</span></section>
+        <section class="gp-label" style="grid-area: 8 / 14 / auto / auto;"><span >14</span></section>
+        <section class="gp-label" style="grid-area: 8 / 15 / auto / auto;"><span >15</span></section>
+        <section class="gp-label" style="grid-area: 8 / 16 / auto / auto;"><span >16</span></section>
+        <section class="gp-label" style="grid-area: 8 / 17 / auto / auto;"><span >17</span></section>
+        <section class="gp-label" style="grid-area: 8 / 18 / auto / auto;"><span >18</span></section>
+	</main>
+	<section class="modal-container">
+		<section class="modal">
+			<header>
+				<span class="close-button">&times;</span>
+			</header>
+			<article>
+				<section class="notation">
+				    <div class="electron-container"></div>
+					<span class="number"></span>
+					<span class="symbol"></span>
+					<span class="mass"></span>
+				</section>
+				<section class="group"></section>
+				<section class="name"></section>
+				<p class="summary"></p>
+				<section class="more-info">
+					<section>
+						<section class="title">Standard State:</section>
+						<section class="standard-state"></section>
+					</section>
+					<section>
+						<section class="title">Bonding Type:</section>
+						<section class="bonding-type"></section>
+					</section>
+					<section>
+						<section class="title">Ion Radius:</section>
+						<section class="ion-radius"></section>
+					</section>
+					<section>
+						<section class="title">Atomic Radius:</section>
+						<section class="atomic-radius"></section>
+					</section>
+					<section>
+						<section class="title">Electronic Config:</section>
+						<section class="electronic-configuration"></section>
+					</section>
+					<section>
+						<section class="title">Electronegativity:</section>
+						<section class="electronegativity"></section>
+					</section>
+					<section>
+						<section class="title">Ionization Energy:</section>
+						<section class="ionization-energy"></section>
+					</section>
+					<section>
+						<section class="title">Electron Affinity:</section>
+						<section class="electron-affinity"></section>
+					</section>
+					<section>
+						<section class="title">Oxidation State:</section>
+						<section class="oxidation-states"></section>
+					</section>
+					<section>
+						<section class="title">Density:</section>
+						<section class="density"></section>
+					</section>
+					<section>
+						<section class="title">Melting Point:</section>
+						<section class="melting-point"></section>
+					</section>
+					<section>
+						<section class="title">Boiling Point:</section>
+						<section class="boiling-point"></section>
+					</section>
+					<section>
+						<section class="title">Shells:</section>
+						<section class="shells"></section>
+					</section>
+					<section>
+						<section class="title">Year Discovered:</section>
+						<section class="year-discovered"></section>
+					</section>
+					<section>
+						<section class="title">Diatomic:</section>
+						<section class="diatomic"></section>
+					</section>
+					<section>
+					    <section class="title">Neutron Number:</section>
+					    <section class="neutron-num"></section>
+					</section>
+				</section>
+			</article>
+		</section>
+	</section>
+    <script>
+    window.onload = function () {
+        localStorage.setItem('Website by Ryan Chan', 'Copyright \251 2020 Ryan Chan. All rights reserved.');
+    };
+    document.querySelector(".close, .popup").addEventListener("click", function(e){
+        document.querySelector(".popup, .popup-content").classList.remove("active");
+        document.querySelector("main").classList.remove("blur");
+        setTimeout(function(){ window.location.href = "https://chanrycz.com/ptable/v2/"; }, 550);
+    }, false);
+    </script>
+</body>
+
+</html>
