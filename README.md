@@ -1,2 +1,2 @@
-# periodic-table
+# Periodic Table
 A Periodic Table
