@@ -1,0 +1,20 @@
+Options -Indexes +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule ^ - [L]
+RewriteRule ^(.+)\.(html|php|shtml)$ $1 [L,R,NE]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*?)/?$ $1.html [L]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ $1.php [L]
+RewriteCond %{REQUEST_FILENAME}.shtml -f
+RewriteRule ^(.*?)/?$ $1.shtml [L]
+
+DirectoryIndex main.php
+
+# Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
