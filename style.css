@@ -146,11 +146,11 @@ footer p a {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -moz-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -ms-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -o-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
+  -webkit-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -moz-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -ms-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -o-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
 }
 
 .element .left-info {
@@ -206,11 +206,11 @@ footer p a {
 
 .bg-damp {
   filter: brightness(0.2) !important;
-  -webkit-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -moz-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -ms-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -o-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
+  -webkit-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -moz-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -ms-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -o-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
 }
 
 .sel-elem {
@@ -218,11 +218,11 @@ footer p a {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  -webkit-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -moz-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -ms-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -o-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
+  -webkit-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -moz-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -ms-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -o-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
 }
 
 .filter-container {
@@ -306,21 +306,21 @@ footer p a {
   border: 2px solid transparent;
   cursor: pointer;
   font-weight: 500;
-  -webkit-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -moz-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -ms-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -o-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
+  -webkit-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -moz-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -ms-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -o-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
 }
 
 .sp-label {
   border-width: 2px;
   border-style: solid;
-  -webkit-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -moz-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -ms-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -o-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
+  -webkit-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -moz-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -ms-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -o-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
 }
 
 .sp-label.lanthanoid-sp {
@@ -352,11 +352,11 @@ footer p a {
 
 .gp-label {
   margin-top: -5%;
-  -webkit-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -moz-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -ms-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  -o-transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
-  transition: all 0.2s ease 0.2s, text-shadow 0.2s linear 0.2s;
+  -webkit-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -moz-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -ms-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -o-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
 }
 
 .gp-label span {
