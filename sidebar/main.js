@@ -199,7 +199,7 @@ xhttp.onreadystatechange = function () {
                   symbolOffset: 8, // When modifying nucleus radius this may need adjusting
                   drawSymbol: true // Render atomic symbol or not
                 })
-                }, 1000);
+				}, 100);
 				element.shells.forEach((shell, shellPos) => {
 					const shellNum = shellPos + 1 < element.shells.length ? `${shell}, ` : shell;
 					const initialText = document.querySelector(".sidebar .more-info .shells").textContent;

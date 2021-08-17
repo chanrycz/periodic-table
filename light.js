@@ -44,11 +44,11 @@ function setElementRGB(category) {
 		case "post-transition metals":
 			return '147, 41, 120';
 		case "lanthanoids":
-			return '149, 116, 109';
+			return '94, 67, 61';
 		case "actinoids":
 			return '0, 128, 128';
 		case "unknown":
-		    return '107, 107, 107';
+		    return '45, 45, 45';
 		default:
 			return '0, 0, 0';
 	}
@@ -105,7 +105,7 @@ xhttp.onreadystatechange = function () {
 			Object.assign(appendedElementContainer.style, {
 				gridRow: element.ypos,
 				gridColumn: element.xpos,
-				backgroundColor: `rgba(${setElementRGB(element.groupBlock)}, 0)`,
+				backgroundColor: `rgba(${setElementRGB(element.groupBlock)}, 0.1)`,
 				borderColor: `rgb(${setElementRGB(element.groupBlock)})`
 			});
 			
@@ -132,11 +132,11 @@ xhttp.onreadystatechange = function () {
 			});
 
 			appendedElementContainer.addEventListener('mouseout', function () {
-				appendedElementContainer.style.backgroundColor = `rgba(${setElementRGB(element.groupBlock)},0)`;
+				appendedElementContainer.style.backgroundColor = `rgba(${setElementRGB(element.groupBlock)},0.1)`;
 				filterLabel.forEach(group => {
 					const groupLabelHTML = group.textContent.toLowerCase();
 					if(groupLabelHTML === element.groupBlock) {
-						group.style.backgroundColor = `rgba(${setElementRGB(element.groupBlock)},0)`;
+						group.style.backgroundColor = `rgba(${setElementRGB(element.groupBlock)},0.1)`;
 					}
 				});
 			});
@@ -177,13 +177,13 @@ xhttp.onreadystatechange = function () {
 				matm = new Atom({
                   containerId: '.electron-container',
                   numElectrons: arrSum(element.shells),
-                  nucleusColor: 'rgba(255,255,255,0)',
+                  nucleusColor: 'rgba(0,0,0,0)',
                   nucleusRadius: 1,
-                  electronRadius: 3.5,
+                  electronRadius: 2.5,
                   electronColor: `rgb(${setElementRGB(element.groupBlock)})`,
-                  orbitalSpacing: 9,
-                  orbitalWidth: 1,
-                  orbitalColor: 'white',
+                  orbitalSpacing: 8,
+                  orbitalWidth: 0.5,
+                  orbitalColor: 'black',
                   idNumber: 1,
                   animationTime: 2000,
                   rotateConfig: {speed: 25, clockwise: true},
@@ -209,7 +209,7 @@ xhttp.onreadystatechange = function () {
 				const groupLabelHTML = groupLabelElement.textContent.toLowerCase();
 				if(groupLabelHTML === group) {
 					Object.assign(groupLabelElement.style, {
-						backgroundColor: `rgba(${setElementRGB(groupLabelHTML)}, 0)`,
+						backgroundColor: `rgba(${setElementRGB(groupLabelHTML)}, 0.1)`,
 						borderColor: `rgb(${setElementRGB(groupLabelHTML)})`
 					});
 				}
@@ -230,7 +230,7 @@ xhttp.onreadystatechange = function () {
 					}
 				});
 				groupLabelElement.addEventListener("mouseout", function () {
-					groupLabelElement.style.backgroundColor = `rgba(${setElementRGB(groupLabelHTML)},0)`;
+					groupLabelElement.style.backgroundColor = `rgba(${setElementRGB(groupLabelHTML)},0.1)`;
 					if(element.groupBlock === groupLabelHTML) {
 						document.querySelector(`main .element.element-${element.atomicNumber}`).classList.remove('sel-elem');
 					} else {

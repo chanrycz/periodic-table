@@ -391,7 +391,7 @@ footer p a {
 	width: 500px;
 	min-height: 100vh;
 	z-index: 999;
-	transition: right 1s linear 0s;
+	transition: right 0.8s ease-in-out 0s;
 	background-color: transparent
 }
 
@@ -404,7 +404,7 @@ footer p a {
 
 .open .sidebar {
 	right: 0;
-	transition: right 1s linear 0s
+	transition: right 0.8s ease-in-out 0s
 }
 
 .sidebar.right header {

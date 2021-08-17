@@ -5,11 +5,9 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="google" content="notranslate">
-	<meta name="robots" content="noindex, nofollow" />
 	<title>Periodic Table | chanrycz.com</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="style.css?v=sb_1.0.0-rev4" rel="stylesheet" />
-	<style></style>
+	<link href="style.css?v=sb_1.0.0-rev7" rel="stylesheet" />
 </head>
 
 <body>
@@ -152,8 +150,8 @@
 	</section>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.3.2/jquery.sidebar.min.js"></script>
-    <script type="text/javascript" src="electrons.min.js?v=sb_1.0.0-rev4"></script>
-    <script type="text/javascript" src="main.js?v=sb_1.0.0-rev4"></script>
+    <script type="text/javascript" src="electrons.min.js?v=sb_1.0.0-rev7"></script>
+    <script type="text/javascript" src="main.js?v=sb_1.0.0-rev7"></script>
     
     <script>
     window.onload = function () {
@@ -172,6 +170,21 @@
             elem.innerHTML = `*{zoom: calc(1 / `+(dpi-(dpiDisplace*4))+`);}`;
         }
     }
+    </script>
+    <script>
+    function setMargin() {
+    	var element = document.querySelector('main');
+    	var elementHeight = element.offsetHeight + 2;
+    	var marginHeight = (document.documentElement.clientHeight - elementHeight) / 2;
+    	var marginTop = marginHeight - 25;
+    	var marginBottom = marginHeight + 25;
+    	if (marginTop >= 0) {
+    		element.style.marginTop = marginTop + "px";
+    		element.style.marginBottom = marginBottom + "px";
+    	}
+    }
+    setMargin();
+    window.onresize = setMargin;
     </script>
 </body>
 

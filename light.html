@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html class="notranslate" translate="no" lang="en">
 
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="google" content="notranslate">
 	<title>Periodic Table | chanrycz.com</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="style.min.css?v=1NOV2020-REV1" rel="stylesheet" />
+	<link href="light.css?v=1.0.1-r9" rel="stylesheet" />
 </head>
 
 <body>
-<div class="popup-overlay active">
- <div class="popup-content active">
-    <h2>We've moved to a new home!</h2>
-    <p>Periodic Table v2 has officially replaced v1.</p>
-    <p>Our new home is at: <span style="color:#2a9df4">https://chanrycz.com/ptable/</span></p>
-    <button class="btn btn-info" onclick="window.location.href='https://chanrycz.com/ptable/'">Proceed</button>
- </div>
-</div>
-	<main class="blur">
+    <button class="btn btn-info v1btn" onclick="window.location.href='https://chanrycz.com/ptable/old'">Go to v1</button>
+	<main>
 		<section class="filter-container">
 			<section class="preview">
 				<section class="left-info">
@@ -32,18 +26,18 @@
 				</section>
 			</section>
 			<section>
-				<section class="label">Nonmetal</section>
-				<section class="label">Noble Gas</section>
-				<section class="label">Alkali Metal</section>
-				<section class="label">Alkaline Earth Metal</section>
-				<section class="label">Metalloid</section>
+				<section class="label">Nonmetals</section>
+				<section class="label">Noble Gases</section>
+				<section class="label">Alkali Metals</section>
+				<section class="label">Alkaline Earth Metals</section>
+				<section class="label">Metalloids</section>
 			</section>
 			<section>
-				<section class="label">Halogen</section>
-				<section class="label">Transition Metal</section>
-				<section class="label">Post-Transition Metal</section>
-				<section class="label">Lanthanoid</section>
-				<section class="label">Actinoid</section>
+				<section class="label">Halogens</section>
+				<section class="label">Transition Metals</section>
+				<section class="label">Post-Transition Metals</section>
+				<section class="label">Lanthanoids</section>
+				<section class="label">Actinoids</section>
 				<section class="label">Unknown</section>
 			</section>
         </section>
@@ -69,7 +63,7 @@
         <section class="gp-label" style="grid-area: 8 / 17 / auto / auto;"><span >17</span></section>
         <section class="gp-label" style="grid-area: 8 / 18 / auto / auto;"><span >18</span></section>
 	</main>
-	<section class="modal-container">
+	<section class="modal-container" id="modal-bg">
 		<section class="modal">
 			<header>
 				<span class="close-button">&times;</span>
@@ -153,14 +147,10 @@
 			</article>
 		</section>
 	</section>
+    <script type="text/javascript" src="electrons.min.js"></script>
+    <script type="text/javascript" src="light.js?v=1.0.1-r9"></script>
     
-    <script>
-    document.querySelector(".close, .popup").addEventListener("click", function(e){
-        document.querySelector(".popup, .popup-content").classList.remove("active");
-        document.querySelector("main").classList.remove("blur");
-        setTimeout(function(){ window.location.href = "https://chanrycz.com/ptable/"; }, 550);
-    }, false);
-    </script>
+    
     <script>
     window.onload = function () {
         var dpi = window.devicePixelRatio;
@@ -179,7 +169,21 @@
         }
     }
     </script>
-    
+    <script>
+    function setMargin() {
+    	var element = document.querySelector('main');
+    	var elementHeight = element.offsetHeight + 2;
+    	var marginHeight = (document.documentElement.clientHeight - elementHeight) / 2;
+    	var marginTop = marginHeight - 25;
+    	var marginBottom = marginHeight + 25;
+    	if (marginTop >= 0) {
+    		element.style.marginTop = marginTop + "px";
+    		element.style.marginBottom = marginBottom + "px";
+    	}
+    }
+    setMargin();
+    window.onresize = setMargin;
+    </script>
 </body>
 
 </html>

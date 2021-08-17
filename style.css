@@ -33,11 +33,11 @@ body {
     left: 50%;
     padding: 5%;
     opacity: 0;
-    -webkit-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    -moz-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    -ms-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    -o-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
 }
 
 .close {
@@ -46,11 +46,11 @@ body {
     color:white;
     border:2px solid #f44336;
     padding: 10px 24px;
-    -webkit-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    -moz-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    -ms-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    -o-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
 }
 
 .close:hover {
@@ -68,20 +68,20 @@ body {
 .popup-content.active {
     visibility:visible;
     opacity: 1;
-    -webkit-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    -moz-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    -ms-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    -o-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
 }
 
 .blur {
     filter: blur(5px);
-    -webkit-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    -moz-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    -ms-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    -o-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-    transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
 }
 
 main {
@@ -96,22 +96,22 @@ main {
   max-width: 100vw;
   height: 100%;
   filter: blur(0px) grayscale(0%);
-  -webkit-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  -moz-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  -ms-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  -o-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
   overflow-y: hidden;
   padding: 0.5em;
 }
 
 .blur-main {
   filter: blur(5px) grayscale(100%) !important;
-  -webkit-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  -moz-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  -ms-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  -o-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 footer {
@@ -146,11 +146,11 @@ footer p a {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -moz-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -ms-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -o-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .element .left-info {
@@ -206,11 +206,11 @@ footer p a {
 
 .bg-damp {
   filter: brightness(0.2) !important;
-  -webkit-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -moz-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -ms-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -o-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .sel-elem {
@@ -218,11 +218,11 @@ footer p a {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  -webkit-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -moz-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -ms-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -o-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .filter-container {
@@ -306,25 +306,25 @@ footer p a {
   border: 2px solid transparent;
   cursor: pointer;
   font-weight: 500;
-  -webkit-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -moz-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -ms-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -o-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .sp-label {
   border-width: 2px;
   border-style: solid;
-  -webkit-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -moz-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -ms-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -o-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .sp-label.lanthanoid-sp {
-  border-color: rgb(125, 142, 42);
+  border-color: rgb(149, 116, 109);
 }
 
 .sp-label.actinoid-sp {
@@ -341,7 +341,7 @@ footer p a {
 }
 
 .lanthanoid-sp p {
-  color: rgb(125, 142, 42);
+  color: rgb(149, 116, 109);
   filter: brightness(1.75);
 }
 
@@ -352,11 +352,11 @@ footer p a {
 
 .gp-label {
   margin-top: -5%;
-  -webkit-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -moz-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -ms-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  -o-transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
-  transition: text-shadow 0.2s linear 0.2s, all 0.2s ease 0.2s !important;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .gp-label span {
@@ -379,26 +379,26 @@ footer p a {
   justify-content: center;
   margin-top: -2%;
   opacity: 0;
-  -webkit-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  -moz-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  -ms-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  -o-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
   z-index: 99;
 }
 
 .visible-model {
   visibility: visible !important;
   opacity: 1 !important;
-  -webkit-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  -moz-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  -ms-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  -o-transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
-  transition: all 0.2s ease 0s, text-shadow 0.2s linear 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .modal-container .modal {
-  background-color: white;
+  background-color: #272727;
   border: none;
   padding: 0;
   border-radius: 5px;

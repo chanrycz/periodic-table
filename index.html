@@ -7,7 +7,7 @@
 	<meta name="google" content="notranslate">
 	<title>Periodic Table | chanrycz.com</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="style.min.css?v=1.4.5-rev8" rel="stylesheet" />
+	<link href="style.css?v=1.4.6-r10" rel="stylesheet" />
 </head>
 
 <body>
@@ -147,8 +147,8 @@
 			</article>
 		</section>
 	</section>
-    <script type="text/javascript" src="electrons.min.js?v=1.4.5-rev8"></script>
-    <script type="text/javascript" src="main.min.js?v=1.4.5-rev8"></script>
+    <script type="text/javascript" src="electrons.min.js"></script>
+    <script type="text/javascript" src="main.js?v=1.4.6-r10"></script>
     
     
     <script>
@@ -168,6 +168,21 @@
             elem.innerHTML = `*{zoom: calc(1 / `+(dpi-(dpiDisplace*4))+`);}`;
         }
     }
+    </script>
+    <script>
+    function setMargin() {
+    	var element = document.querySelector('main');
+    	var elementHeight = element.offsetHeight + 2;
+    	var marginHeight = (document.documentElement.clientHeight - elementHeight) / 2;
+    	var marginTop = marginHeight - 25;
+    	var marginBottom = marginHeight + 25;
+    	if (marginTop >= 0) {
+    		element.style.marginTop = marginTop + "px";
+    		element.style.marginBottom = marginBottom + "px";
+    	}
+    }
+    setMargin();
+    window.onresize = setMargin;
     </script>
 </body>
 
